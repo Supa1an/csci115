@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staying - Trip To Tofino</title>
+    <link rel="stylesheet" type="text/css" href="mainproject.css">
+    <style>
+      *{margin: 0;}
+      body{
+        background-color: floralwhite;
+        background-image: url(IMG/staybgimg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+      }
+      h1{
+        margin-top: 50px;
+        font-size: 60px;
+        font-weight: lighter;
+        text-align: center;
+      }
+      .scontain{
+        padding: 2rem;
+        width: 600px;
+      }
+      .swrapper{
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .slider1{
+        display: flex;
+        aspect-ratio: 9/12;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+        border-radius: 0.5rem;
+      }
+      .slider img{
+        flex: 1 0 100%;
+        scroll-snap-align: start;
+        object-fit: cover;
+      }
+      .slider-nav{
+        display: flex;
+        column-gap: 1rem;
+        position: absolute;
+        /* bottom: 1.25rem; */
+        top: 61%;
+        left: 33%;
+        transform: translateX(-50%);
+        z-index: 1;
+      }
+      .slider-nav a{
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background-color: #fff;
+        position: relative;
+        
+      }
+      .flexcontain{
+        display: flex;
+        border: 2px;
+        height: 900px;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .introbox{
+        margin-top: 60px;
+        margin-left: 30px;
+        text-align: center;
+      }
+      .tablestyle{
+        width: 700px;
+        font-size: larger;
+        border-collapse: collapse;
+        border-width: 2px;
+        border-color: rgb(131, 76, 9);
+        margin-top: 15px;
+      }
+      td{
+        padding: 7px;
+        border-width: 2px;
+      }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+          <img src="/IMG/weblogo.png" alt="logo" class="logo" width="170" height="45">
+        <nav>
+          <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="abouttofino.html">ABOUT</a></li>
+              <li><a href="staying.html">STAY</a></li>
+              <li><a href="foodintofino.html">EAT</a></li>
+              <li><a href="activities.html">PLAY</a></li>
+              <li><a href="askfortips.html">MORE</a></li>
+          </ul>
+        </nav>
+      </div>
+      </header>
+
+    <div>
+      <h1>Where you STAY, Where you ENJOY.</h1>
+    </div>
+
+    <div class="flexcontain">
+    <section class="scontain">
+      <div class="wrapper">
+        <div class="slider1">
+          <img id="slide-1" src="IMG/outsidestaying.jpg" alt="outside of airbnb">
+          <img id="slide-2" src="IMG/livingroom.jpg" alt="livingroom">
+          <img id="slide-3" src="IMG/kitchen.jpg" alt="kitchen">
+          <img id="slide-4" src="IMG/mainroom.jpg" alt="mainroom">
+        </div>
+        <div class="slider-nav">
+          <a href="#slide-1"></a>
+          <a href="#slide-2"></a>
+          <a href="#slide-3"></a>
+          <a href="#slide-4"></a>
+        </div>
+      </div>
+    </section>
+    <div class="introbox">
+    <h2>The Airbnb we stayed in is called Twinfin Tofino</h2>
+    <br>
+    
+    <table class="tablestyle" border="1" >
+      <tr>
+        <td>View Point</td>
+        <td>Facilities</td>
+      </tr>
+      <tr>
+        <td>Outside</td>
+        <td>
+          3 year old building with dark finish. A massage tub located in the yard <br>Where you can enjoy the sunshin while chilling.
+        </td>
+ 
+      </tr>
+      <tr>       
+        <td>Livingroom</td>
+        <td>Woody mordern style inside providing functionality <br>For you and your frind to party through the vacation</td>
+      </tr>
+      <tr>
+        <td>Kitchen</td>
+        <td>Where the creation and masterpices born <br> To feed the group just back from surfing.</td>
+      </tr>
+      <tr>
+        <td>Mainroom</td>
+        <td>Get charged and wish you wake up in the sushine full of enegy!</td>
+      </tr>
+      
+    </table>
+    <br><br>
+    <h2>Book your vacation through <a href="https://www.airbnb.ca" target="_blank">Airbnb</a> Now!</h2>
+  </div>
+  </div>
+</body>
+</html>

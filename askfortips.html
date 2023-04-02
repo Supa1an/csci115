@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us For More Info</title>
+    <link rel="stylesheet" type="text/css" href="mainproject.css">
+    <style>
+        body{
+            font-size: 1.1em;
+            background-image: url(IMG/p5background.jpg);
+        }
+        .words{
+            color: aliceblue;
+        }
+        .heading{
+            text-align: center;
+            width: 100%;
+            margin: auto;
+            margin-top: 50px;
+        }
+        #head{
+            font-size: 1.8em;
+        }
+        #subheading{
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        #content1{
+            width: 90%;
+            margin: auto;
+        }
+        form{
+            background-color: rgba(0, 0, 0, 0.7);
+            padding-top: 34px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 54%;
+            border-radius: 5px;
+            margin: auto;
+            margin-top: 10px;
+            padding-bottom: 60px;
+        }
+        form .box{
+            width: 98.5%;
+            height: 2.8em;
+            position: relative;
+            bottom: 10px;
+            border: 0;
+            border-radius: 5px;
+        }
+        #option1 select{
+            width: 98.5%;
+            height: 2.7em;
+            position: relative;
+            bottom: 10px;
+            border-radius: 5px;
+            border: 0;
+        }
+        #option2 select{
+            width: 98.5%;
+            height: 2.7em;
+            position: relative;
+            top: 10px;
+            border-radius: 5px;
+            border: 0;
+        }
+        textarea{
+            width: 98.5%;
+            height: 125px;
+            position: relative;
+            bottom: 17px;
+        }
+        button{
+            width: 98.5%;
+            height: 3em;
+            position: relative;
+            top: 10px;
+            background-color: rgb(34, 118, 213);
+            margin-bottom: 10px;
+            cursor: pointer;
+            border: none;
+            color: white;
+        }
+        textarea::placeholder{
+            font-size: 1.4em;
+            position: relative;
+            top: 8px;
+            left: 5px;
+            width: 70%;
+        }
+        input::placeholder{
+            font-size: 1.1em;
+            position: relative;
+            left: 10xp;
+            width: 50%;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+          <img src="/IMG/weblogo.png" alt="logo" class="logo" width="170" height="45">
+        <nav>
+          <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="abouttofino.html">ABOUT</a></li>
+              <li><a href="staying.html">STAY</a></li>
+              <li><a href="foodintofino.html">EAT</a></li>
+              <li><a href="activities.html">PLAY</a></li>
+              <li><a href="askfortips.html">MORE</a></li>
+          </ul>
+        </nav>
+      </div>
+      </header>
+
+
+    <div class="heading">
+        <h1>Tell Us How You Like Tofino Now</h1> 
+        <h3 id="subheading"> Thank you for taking the time to help us improve in the future</h3>
+    </div>
+    <form class=" words"> <!--make sure the div element closed at the right place-->
+        <div id="content1">
+            <label>Name</label> <br><br>
+            <input type="name" name="name" placeholder="Enter your name or a nickname" class="box"> <br><br>
+            <label>Email</label> <br><br>
+            <input type="email" name="email" placeholder="Please enter your E-mail" class="box"> <br><br>
+            <label>Age</label> <br><br>
+            <input type="age" name="age" placeholder="Please enter your age or a range" class="box"> <br><br>
+        
+        <div id="option1">
+            <label>What is your Current Status?</label> <br><br>
+            <select>
+                <option name="status">Select your Role</option>
+                <option value="Student">Student</option>
+                <option value="Part Time Working">Part Time Working</option>
+                <option value="Full Time Working">Full Time Working</option>
+                <option value="Traveller or Explorer">Traveller or Explorer</option>
+            </select>
+        </div><!--2-->>
+        
+        <br>
+        <label id="head1">Do you like to travel?</label> <br><br>
+        <input type="radio" name="radio" class="larger">&nbsp&nbsp&nbsp&nbspDefinitely<br><br>
+        <input type="radio" name="radio" class="larger">&nbsp&nbsp&nbsp&nbspMaybe<br><br>
+        <input type="radio" name="radio" class="larger">&nbsp&nbsp&nbsp&nbspNot Really<br><br>
+
+        <label>What is your favourite part about Travelling?</label>
+        <div id="option2">
+            <select>
+                <option name="Select an option">Choose your answer</option>
+                <option value="STAY">Staying environment</option>
+                <option value="EAT">Food and Restaurant</option>
+                <option value="PLAY">Activities around the place</option>
+            </select>
+        </div>
+        <br><br>
+        <label id="head2"> Any more comments or questions about tofino?</label><br><br>
+        <textarea placeholder="Enter Your Comments Here"></textarea>
+        <button><h3>Submit</h3></button>
+    </div> <!--1-->>
+    
+    </form>
+
+</body>
+</html>
